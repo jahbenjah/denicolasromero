@@ -1,19 +1,6 @@
-// Import variables (overrides Bootstrap defaults)
-@import "base/variables.scss";
+$secondary-red-color: #f82249;
+$white-color : #fff;
 
-// Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
-
-// Import base styles
-@import "base/page.scss";
-
-// Import components styles
-@import "components/divider.scss";
-@import "components/buttons.scss";
-
-// Import layout styles
-@import "layout/navbar.scss";
-@import "layout/masthead.scss";
-@import "layout/portfolio.scss";
-@import "layout/contact.scss";
+@import "layout/header.scss";
 @import "layout/footer.scss";

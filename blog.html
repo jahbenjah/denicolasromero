@@ -1,0 +1,76 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="home">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+
+    {{ content }}
+
+    {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+            {%- endif -%}
+        </li>
+        {%- endfor -%}
+    </ul>
+
+    <p class="feed-subscribe">
+        <a href="{{ 'feed.xml' | relative_url }}">
+            <svg class="svg-icon orange">
+                <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg><span>RSS</span>
+        </a>
+    </p>
+    {%- endif -%}
+
+</div>
+
+
+<section id="speakers" class="wow fadeInUp">
+    {%- if site.posts.size > 0 -%}
+    <div class="container">
+        <div class="section-header">
+            <h2>Event Speakers</h2>
+            <p>Here are some of our speakers</p>
+        </div>
+        {%- for post in site.posts -%}
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="speaker">
+                    <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+                    <div class="details">
+                        <h3> <a class="post-link" href="{{ post.url | relative_url }}">
+                                {{ post.title | escape }}
+                            </a>
+                        </h3>
+                        <p><span class="post-meta">{{ post.date | date: date_format }}</span></p>
+                        <div class="social">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%- endfor -%}
+    </div>
+    {%- endif -%}
+</section>

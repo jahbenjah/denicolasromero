@@ -67,7 +67,10 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
+  // Venobox
+  var venobox = gulp.src('./node_modules/venobox/venobox/*')
+  .pipe(gulp.dest('./vendor/venobox'));
+  return merge(bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing,venobox);
 }
 
 // CSS task

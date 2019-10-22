@@ -25,7 +25,7 @@
     line-height: 1;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    color:$white-color;
+    color: #fff;
 }
 
 #footer .footer-top .footer-info img {
@@ -38,7 +38,7 @@
     line-height: 24px;
     margin-bottom: 0;
     font-family: "Raleway", sans-serif;
-    color:$white-color;
+    color: #fff;
 }
 
 #footer .footer-top .social-links a {
@@ -57,18 +57,18 @@
 }
 
 #footer .footer-top .social-links a:hover {
-    background: $secondary-red-color;
-    color:$white-color;
+    background: #f82249;
+    color: #fff;
 }
 
 #footer .footer-top h4 {
     font-size: 14px;
     font-weight: bold;
-    color:$white-color;
+    color: #fff;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 12px;
-    border-bottom: 2px solid $secondary-red-color;
+    border-bottom: 2px solid #f82249;
 }
 
 #footer .footer-top .footer-links {
@@ -83,7 +83,7 @@
 
 #footer .footer-top .footer-links ul i {
     padding-right: 5px;
-    color: $secondary-red-color;
+    color: #f82249;
     font-size: 18px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 #footer .footer-top .footer-links ul a:hover {
-    color: $secondary-red-color;
+    color: #f82249;
 }
 
 #footer .footer-top .footer-contact {
@@ -123,12 +123,12 @@
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-    background: $secondary-red-color;
+    background: #f82249;
     border: 0;
     width: 35%;
     padding: 6px 0;
     text-align: center;
-    color:$white-color;
+    color: #fff;
     transition: 0.3s;
     cursor: pointer;
 }

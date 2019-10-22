@@ -1,0 +1,5 @@
+/*!
+ * Benjamin Camacho - denicolasromero v1.0.0 (https://aspnetcoremaster.com)
+ * Copyright 2019 Benjamin Camacho
+ * Licensed under MIT (https://github.com/jahbenjah/denicolasromero/blob/master/LICENSE)
+ */#header{height:90px;padding:25px 0;position:fixed;left:0;top:0;right:0;-webkit-transition:all .5s;transition:all .5s;z-index:997}#header.header-fixed,#header.header-scrolled{background:rgba(6,12,34,.98);height:70px;padding:15px 0;-webkit-transition:all .5s;transition:all .5s}#header #logo h1{font-size:36px;margin:0;padding:6px 0;line-height:1;font-family:Raleway,sans-serif;font-weight:700;letter-spacing:3px;text-transform:uppercase}#header #logo h1 span{color:#f82249}#header #logo h1 a,#header #logo h1 a:hover{color:#fff}#header #logo img{padding:0;margin:0;max-height:40px}

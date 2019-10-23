@@ -40,5 +40,5 @@ exclude:
   - README.md
   - package-lock.json
   - package.json
-  - gulp.js
+  - gulpfile.js
   

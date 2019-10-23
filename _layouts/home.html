@@ -1,6 +1,51 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es-mx" }}">
 
+{%- include head.html -%}
 
-{{ content }}
+<body>
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+        {%- include facebook-analytics.html -%}
+    {%- endif -%}
+    {%- include header.html -%}
+
+    <!--========================== Intro Section============================-->
+    <section id="intro">
+        <div class="intro-container wow fadeIn">
+            <h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
+            <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+                data-autoplay="true"></a>
+            <a href="#about" class="about-btn scrollto">About The Event</a>
+        </div>
+    </section>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/lib/superfish/hoverIntent.js"></script>
+    <script src="/lib/superfish/superfish.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/vendor/venobox/venobox.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Form JavaScript File
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+    <!-- <script src="js/main.js"></script> -->
+
+</body>
+
+</html>

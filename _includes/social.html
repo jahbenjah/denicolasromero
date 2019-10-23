@@ -2,22 +2,26 @@
 <div class="col-lg-4 mb-5 mb-lg-0">
     <h4 class="text-uppercase mb-4">Redes sociales</h4>
     {%- if site.facebook_username -%}
-    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}">
+    <a class="btn btn-outline-light btn-social mx-1"
+        href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}">
         <i class="fab fa-fw fa-facebook-f"></i>
     </a>
     {%- endif -%}
     {%- if site.twitter_username -%}
-    <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}">
+    <a class="btn btn-outline-light btn-social mx-1"
+        href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}">
         <i class="fab fa-fw fa-twitter"></i>
     </a>
     {%- endif -%}
     {%- if site.linkedin_username -%}
-    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}/">
+    <a class="btn btn-outline-light btn-social mx-1"
+        href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}/">
         <i class="fab fa-fw fa-linkedin-in"></i>
     </a>
     {%- endif -%}
     {%- if site.github_username -%}
-    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+    <a class="btn btn-outline-light btn-social mx-1"
+        href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
         <i class="fab fa-fw fa-github"></i>
     </a>
     {%- endif -%}

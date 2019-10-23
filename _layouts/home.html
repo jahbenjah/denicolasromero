@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "es-mx" }}">
 
-{%- include head.html -%}
+<head>
+    {%- include head.html -%}
+</head>
 
 <body>
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
-        {%- include facebook-analytics.html -%}
+    {%- include facebook-analytics.html -%}
     {%- endif -%}
     {%- include header.html -%}
 

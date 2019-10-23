@@ -61,6 +61,9 @@ function modules() {
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
+  // jQuery Migrate
+  var jqueryMigrate = gulp.src('./node_modules/jquery-migrate/dist/*.js')
+    .pipe(gulp.dest('./vendor/jquery-migrate'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
@@ -69,8 +72,8 @@ function modules() {
     .pipe(gulp.dest('./vendor/jquery'));
   // Venobox
   var venobox = gulp.src('./node_modules/venobox/venobox/*')
-  .pipe(gulp.dest('./vendor/venobox'));
-  return merge(bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing,venobox);
+    .pipe(gulp.dest('./vendor/venobox'));
+  return merge(bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
 }
 
 // CSS task

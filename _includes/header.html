@@ -1,24 +1,21 @@
-<!--==========================Header============================-->
 <header id="header">
     <div class="container">
-        {%- assign default_paths = site.pages | map: "path" -%}
-        {%- assign page_paths = site.header_pages | default: default_paths -%}
-        {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+
         <div id="logo" class="pull-left">
-            <h1><a rel="author" href="{{ "/" | relative_url }}">DNR</a></h1>
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <h1><a href="#main">De <span>NR</span></a></h1>
+            <!-- <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a> -->
         </div>
-        {%- if titles_size > 0 -%}
+
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                {%- for path in page_paths -%}
-                {%- assign my_page = site.pages | where: "path", path | first -%}
-                {%- if my_page.title -%}
-                <li class="menu-active"><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                {%- endif -%}
-                {%- endfor -%}
+                <li class="menu-active"><a href="#intro">Home</a></li>
+                <li><a href="#about">Acerca</a></li>
+                <li><a href="#speakers">Blog</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#supporters">Patrocinadores</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
-        {%- endif -%}
     </div>
-</header>
-<!-- #header -->
+</header><!-- #header -->

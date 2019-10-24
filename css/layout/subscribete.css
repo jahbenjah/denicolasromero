@@ -1,0 +1,59 @@
+/*!
+ * Benjamin Camacho - denicolasromero v1.0.0 (https://aspnetcoremaster.com)
+ * Copyright 2019 Benjamin Camacho
+ * Licensed under MIT (https://github.com/jahbenjah/denicolasromero/blob/master/LICENSE)
+ */
+
+/*--------------------------------------------------------------
+# Subscribe Section
+--------------------------------------------------------------*/
+#subscribe {
+  padding: 60px;
+  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#subscribe:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#subscribe .section-header h2,
+#subscribe p {
+  color: #fff;
+}
+
+#subscribe input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+#subscribe button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background: #f82249;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+#subscribe button:hover {
+  background: #e0072f;
+}

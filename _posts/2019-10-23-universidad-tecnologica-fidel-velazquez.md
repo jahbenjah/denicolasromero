@@ -2,6 +2,7 @@
 layout: post
 title:  "Universidad Tecnologica Fidel Velazquez"
 permalink: /blog/:title.html
+image: /img/blog/1.jpg
 ---
 
 La Universidad Tecnologica Fidel Velazques se encutra ubicada en la colonia trafio en lo terrnos de la antigua hacienda.
@@ -11,11 +12,12 @@ http://utfv.edomex.gob.mx/
 # Carreras
 
 Tecnico Superior Universitario
- * Contaduria
+ * Contaduría
  * Desarrollo de Negocios .Area de Mercadotecnia
- * Tecnologias De la informacion Area de
+ * Tecnologias De la información Area de
  * Diseño digital area de animación
  * Energias Renovables : area de 
- * Terapia Fisica
+ * Terapia Física
  *
+
 utfv ejecutivas

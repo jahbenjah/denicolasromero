@@ -2,7 +2,7 @@
 layout: post
 title:  "Universidad Tecnologica Fidel Velazquez"
 permalink: /blog/:title.html
-image: /img/blog/1.jpg
+image: /img/blog/1.webp
 ---
 
 La Universidad Tecnologica Fidel Velazques se encutra ubicada en la colonia trafio en lo terrnos de la antigua hacienda.

@@ -62,7 +62,7 @@ function modules() {
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
   // jQuery Migrate
-  var jqueryMigrate = gulp.src('./node_modules/jquery-migrate/dist/*.js')
+  var jqueryMigrate = gulp.src('./node_modules/jquery-migrate/dist/*')
     .pipe(gulp.dest('./vendor/jquery-migrate'));
   // jQuery
   var jquery = gulp.src([

@@ -23,7 +23,7 @@ minima:
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
-#- jekyll-sitemap
+ - jekyll-sitemap
 
 # Exclude from processing.
 exclude:
@@ -41,4 +41,5 @@ exclude:
   - package-lock.json
   - package.json
   - gulpfile.js
+  
   

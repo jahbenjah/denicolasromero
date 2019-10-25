@@ -6,97 +6,34 @@
         </div>
 
         <div class="row">
+            {%- for post in site.posts -%}
             <div class="col-lg-4 col-md-6">
                 <div class="article">
-                    <img src="img/blog/1.webp" alt="Speaker 1" class="img-fluid">
+                    <img src="{{ post.image }}" alt="Speaker 1" class="img-fluid">
                     <div class="detalles">
-                        <h3><a href="speaker-details.html">Armando Navarrete</a></h3>
-                        <p>Presidente Municipal</p>
+                        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+                        <p>{{ post.date | date: date_format }}</p>
                         <div class="social">
-                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-fw fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
-                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url }}"
+                                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                                title="Compartir en Facebook">
+                                <i class="fab fa-fw fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.url }}{{ post.url }}"
+                                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                                title="Compartir en Twitter">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ post.url }}&title={{ post.title }}&summary={{ post.description }}&source={{ site.title }}"
+                                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+                                title="Compartir en LinkedIn">
+                                <i class="fab fa-fw fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="articulo">
-                    <img src="img/blog/2.webp" alt="Speaker 2" class="img-fluid">
-                    <div class="detalles">
-                        <h3><a href="speaker-details.html">Carrera de la Salud Mental</a></h3>
-                        <p>Consequuntur odio aut</p>
-                        <div class="social">
-                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-fw fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
-                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="articulo">
-                    <img src="img/blog/3.webp" alt="Speaker 3" class="img-fluid">
-                    <div class="detalles">
-                        <h3><a href="speaker-details.html">SAMS Nicolás Romero</a></h3>
-                        <p>Fugiat laborum et</p>
-                        <div class="social">
-                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-fw fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
-                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="articulo">
-                    <img src="img/blog/4.webp" alt="Speaker 4" class="img-fluid">
-                    <div class="detalles">
-                        <h3><a href="speaker-details.html">Univerisda Tecnologica Fidel Velazquez</a></h3>
-                        <p>Debitis iure vero</p>
-                        <div class="social">
-                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-fwfa-facebook"></i></a>
-                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
-                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="articulo">
-                    <img src="img/blog/5.webp" alt="Speaker 5" class="img-fluid">
-                    <div class="detalles">
-                        <h3><a href="speaker-details.html">Cinepolis Nicolás Romero</a></h3>
-                        <p>Qui molestiae natus</p>
-                        <div class="social">
-                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-fw fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
-                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="articulo">
-                    <img src="img/blog/6.webp" alt="Speaker 6" class="img-fluid">
-                    <div class="detalles">
-                        <h3><a href="speaker-details.html">CONALEP Nicolás Romero</a></h3>
-                        <p>Non autem dicta</p>
-                        <div class="social">
-                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-fw fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
-                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {%- endfor -%}
         </div>
     </div>
-
 </section>

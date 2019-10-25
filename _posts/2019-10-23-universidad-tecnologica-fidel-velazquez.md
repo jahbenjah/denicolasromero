@@ -5,7 +5,7 @@ permalink: /blog/:title.html
 image: /img/blog/1.webp
 ---
 
-La Universidad Tecnologica Fidel Velazques se encutra ubicada en la colonia trafio en lo terrnos de la antigua hacienda.
+La Universidad Tecnologica Fidel Velazquez se encuentra ubicada en la colonia trafico en lo terrenos de la antigua hacienda.
 
 http://utfv.edomex.gob.mx/
 

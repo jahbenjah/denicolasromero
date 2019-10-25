@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title:  "Cinepolis Nicolás Romero"
 permalink: /blog/:title.html
 image: /img/blog/1.webp
 ---

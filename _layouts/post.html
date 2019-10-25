@@ -1,28 +1,73 @@
----
-layout: default
----
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es-mx" }}">
 
-    <header class="post-header">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        <p class="post-meta">
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {{ page.date | date: date_format }}
-            </time>
-            {%- if page.author -%}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
-                    itemprop="name">{{ page.author | escape }}</span></span>
-            {%- endif -%}</p>
-    </header>
+<head>
+    {%- include head.html -%}
+</head>
 
-    <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
-    </div>
+<body>
+    {%- include facebook-analytics.html -%}
 
-    {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-    {%- endif -%}
-    {%- include facebook-comments.html -%}
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <h1><a href="/">De <span>NR</span></a></h1>
+                <!-- <a href="#intro" class="scrollto"><img src="img/logo.webp" alt="" title=""></a> -->
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="../#intro">Home</a></li>
+                    <li><a href="../#about">Acerca</a></li>
+                    <li><a  class="menu-active" href="../#blog">Blog</a></li>
+                    <li><a href="../#gallery">Galería</a></li>
+                    <li><a href="../#supporters">Patrocinadores</a></li>
+                    <li><a href="../#contact">Contacto</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+
+            <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+                <header class="post-header">
+                    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+                    <p class="post-meta">
+                        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                            itemprop="datePublished">
+                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                            {{ page.date | date: date_format }}
+                        </time>
+                        {%- if page.author -%}
+                        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                                class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+                        {%- endif -%}</p>
+                </header>
+
+                <div class="post-content e-content" itemprop="articleBody">
+                    {{ content }}
+                </div>
+
+                {%- if site.disqus.shortname -%}
+                {%- include disqus_comments.html -%}
+                {%- endif -%}
+                {%- include facebook-comments.html -%}
+                <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+            </article>
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    {%- include scripts.html -%}
+
+</body>
+
+</html>

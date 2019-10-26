@@ -21,7 +21,7 @@
                 <ul class="nav-menu">
                     <li><a href="../#intro">Home</a></li>
                     <li><a href="../#about">Acerca</a></li>
-                    <li><a  class="menu-active" href="../#speakers">Blog</a></li>
+                    <li><a class="menu-active" href="../#speakers">Blog</a></li>
                     <li><a href="../#gallery">Galería</a></li>
                     <li><a href="../#supporters">Patrocinadores</a></li>
                     <li><a href="../#contact">Contacto</a></li>
@@ -30,27 +30,37 @@
         </div>
     </header><!-- #header -->
 
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
+    <main id="main" class="main-page" aria-label="Content">
+        <div class="container">
 
-            <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+            <article itemscope itemtype="http://schema.org/BlogPosting">
 
-                <header class="post-header">
-                    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-                    <p class="post-meta">
-                        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
-                            itemprop="datePublished">
-                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                            {{ page.date | date: date_format }}
-                        </time>
-                        {%- if page.author -%}
-                        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                                class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
-                        {%- endif -%}</p>
+                <header class="section-header">
+                    <h2 itemprop="name headline">{{ page.title | escape }}</h1>
+                        <p>
+                            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                                {{ page.date | date: date_format }}
+                            </time>
+                            {%- if page.author -%}
+                            • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="name">{{ page.author | escape }}</span></span>
+                            {%- endif -%}
+                        </p>
                 </header>
 
-                <div class="post-content e-content" itemprop="articleBody">
-                    {{ content }}
+
+                <div class="row" itemprop="articleBody">
+                    <div class="details">
+                        <h2>Brenden Legros</h2>
+                        <div class="social">
+                            <a href=""><i class="fab fa-fw fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-fw fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-fw fa-google-plus"></i></a>
+                            <a href=""><i class="fab fa-fw fa-linkedin"></i></a>
+                        </div>
+                        {{ content }}
+                    </div>
                 </div>
 
                 {%- if site.disqus.shortname -%}
@@ -71,3 +81,52 @@
 </body>
 
 </html>
+
+
+<main id="main" class="main-page">
+
+    <!--==========================
+      Speaker Details Section
+    ============================-->
+    <section id="speakers-details" class="wow fadeIn">
+        <div class="container">
+            <div class="section-header">
+                <h2>Speaker Details</h2>
+                <p>Praesentium ut qui possimus sapiente nulla.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="details">
+                        <h2>Brenden Legros</h2>
+                        <div class="social">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio
+                            dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio
+                            voluptas et.</p>
+
+                        <p>Aboriosam inventore dolorem inventore nam est esse. Aperiam voluptatem nisi molestias laborum
+                            ut. Porro dignissimos eum. Tempore dolores minus unde est voluptatum incidunt ut aperiam.
+                        </p>
+
+                        <p>Et dolore blanditiis officiis non quod id possimus. Optio non commodi alias sint culpa
+                            sapiente nihil ipsa magnam. Qui eum alias provident omnis incidunt aut. Eius et officia
+                            corrupti omnis error vel quia omnis velit. In qui debitis autem aperiam voluptates unde sunt
+                            et facilis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>

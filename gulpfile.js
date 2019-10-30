@@ -66,6 +66,9 @@ function modules() {
   // jQuery Migrate
   var jqueryMigrate = gulp.src('./node_modules/jquery-migrate/dist/*')
     .pipe(gulp.dest('./vendor/jquery-migrate'));
+  // animate.css
+  var animateCSS = gulp.src('./node_modules/animate.css/*.css')
+    .pipe(gulp.dest('./vendor/animate'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
@@ -75,7 +78,7 @@ function modules() {
   // Venobox
   var venobox = gulp.src('./node_modules/venobox/venobox/*')
     .pipe(gulp.dest('./vendor/venobox'));
-  return merge(bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
+  return merge(animateCSS,bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
 }
 
 // CSS task

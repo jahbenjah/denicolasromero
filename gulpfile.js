@@ -76,6 +76,9 @@ function modules() {
   var owl = gulp.src('./node_modules/owl.carousel/dist/*')
     .pipe(gulp.dest('./vendor/owlcarousel'));
 
+  var owlassets = gulp.src('./node_modules/owl.carousel/dist/assets/*')
+    .pipe(gulp.dest('./vendor/owlcarousel/assets'));
+
   // wow.js
   var wowjs = gulp.src('./node_modules/wowjs/dist/*')
     .pipe(gulp.dest('./vendor/wow'));
@@ -89,7 +92,7 @@ function modules() {
   // Venobox
   var venobox = gulp.src('./node_modules/venobox/venobox/*')
     .pipe(gulp.dest('./vendor/venobox'));
-  return merge(owl,wowjs, superfish, animateCSS, bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
+  return merge(owlassets, owl, wowjs, superfish, animateCSS, bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
 }
 
 // CSS task

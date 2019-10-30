@@ -70,8 +70,13 @@ function modules() {
   var animateCSS = gulp.src('./node_modules/animate.css/*.css')
     .pipe(gulp.dest('./vendor/animate'));
   // superfish
-  var animateCSS = gulp.src('./node_modules/superfish/dist/js/*')
+  var superfish = gulp.src('./node_modules/superfish/dist/js/*')
     .pipe(gulp.dest('./vendor/superfish'));
+
+  // wow.js
+  var wowjs = gulp.src('./node_modules/wowjs/dist/*')
+    .pipe(gulp.dest('./vendor/wow'));
+
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
@@ -81,7 +86,7 @@ function modules() {
   // Venobox
   var venobox = gulp.src('./node_modules/venobox/venobox/*')
     .pipe(gulp.dest('./vendor/venobox'));
-  return merge(animateCSS, bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
+  return merge(wowjs,superfish,animateCSS, bootstrapJS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, venobox, jqueryMigrate);
 }
 
 // CSS task

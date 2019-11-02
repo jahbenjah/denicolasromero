@@ -1,14 +1,86 @@
----
-layout: default
----
-<article class="post">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es-mx" }}">
 
-    <header class="post-header">
-        <h1 class="post-title">{{ page.title | escape }}</h1>
-    </header>
+<head>
+    {%- include head.html -%}
+</head>
 
-    <div class="post-content">
-        {{ content }}
-    </div>
+<body>
+    {%- include facebook-analytics.html -%}
 
-</article>
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1><a href="/">De <span>NR</span></a></h1>
+                <!-- <a href="#intro" class="scrollto"><img src="img/logo.webp" alt="" title=""></a> -->
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="../#intro">Home</a></li>
+                    <li><a href="../#about">Acerca</a></li>
+                    <li><a class="menu-active" href="../#speakers">Blog</a></li>
+                    <li><a href="../#gallery">Galería</a></li>
+                    <li><a href="../#supporters">Patrocinadores</a></li>
+                    <li><a href="../#contact">Contacto</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+
+    <main id="main" class="main-page" aria-label="Content">
+        <div class="container">
+
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+
+                <header class="section-header">
+                    <h2 itemprop="name headline">{{ page.title | escape }}</h1>
+                        <p>
+                            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                                {{ page.date | date: date_format }}
+                            </time>
+                            {%- if page.author -%}
+                            • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                <span itemprop="name">{{ page.author | escape }}</span></span>
+                            {%- endif -%}
+                        </p>
+                </header>
+
+
+                <div class="row" itemprop="articleBody">
+                    <div class="details">
+                        {{ content }}
+                    </div>
+                </div>
+
+                {%- if site.disqus.shortname -%}
+                {%- include disqus_comments.html -%}
+                {%- endif -%}
+                {%- include facebook-comments.html -%}
+                <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+            </article>
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/venobox/venobox.min.js"></script>
+    <script src="../vendor/superfish/hoverIntent.js"></script>
+    <script src="../vendor/superfish/superfish.min.js"></script>
+    <script src="../vendor/wow/wow.min.js"></script>
+    <script src="../vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../contactform/contactform.js"></script>
+    <script src="../js/main.min.js"></script>
+
+</body>
+
+</html>

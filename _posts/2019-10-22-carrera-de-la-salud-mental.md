@@ -8,15 +8,13 @@ image: /img/blog/1.webp
 
 El pasado 20 de octubre del 2019 tuvo lugar la primera carrera de la Salud Mental en Nicolas Romero. Una carrera de 5Km por la segunda via principal del municipio.
 
-
 Consistio en correr o caminar 5 km por la llamada via Corta
 
-Asistieron jovenes, adultos, adultos mayores y niño.
+Asistieron jóvenes, adultos, adultos mayores y niño.
 
 El punto de salida estuvo ubicado en la Escuela Yolanda Cuervo Toledano en la colonia cantaros 3 del municipio. La linea de meta estuvo el la colonia Santa Anita la Bolsa en las oficinas del Centro de Control y Mando mejor conocido como C4.
 
-Se conto con la participación de 
-La inaguración estuvo a cargo del regidor [Dr. Oscar González Jimenez]() y la ultramaratonisca Lorena. El Doctor Oscar compartio unos datos sobre el suicidio.
+Se conto con la participación de la inaguración estuvo a cargo del regidor [Dr. Oscar González Jimenez]() y la ultramaratonisca Lorena. El Doctor Oscar compartio unos datos sobre el suicidio.
 la ultramaratonista Lorena quien compartio la hazaña que realizo el pasadó puedes leer mas sobre este tema aquí.
 
 ## Las categorías y ganadores

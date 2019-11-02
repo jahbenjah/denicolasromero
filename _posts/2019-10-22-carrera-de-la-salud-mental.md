@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title:  "Carrera de la Salud Mental"
 subtitle:  "5Km"
 permalink: /blog/:title.html

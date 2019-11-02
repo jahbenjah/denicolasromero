@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title:  "Código postal Nicolas Romero"
 subtitle:  ""
 permalink: /blog/:title.html

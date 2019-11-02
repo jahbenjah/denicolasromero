@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title: "Escuadrón de Nicolás Romero"
 subtitle: "medio de noticias local"
 permalink: /blog/:title.html

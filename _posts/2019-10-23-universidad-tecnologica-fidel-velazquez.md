@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title:  "Universidad Tecnologica Fidel Velazquez"
 permalink: /blog/:title.html
 image: /img/blog/1.webp

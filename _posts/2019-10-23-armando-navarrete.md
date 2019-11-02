@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title:  "Armando Navarrete Lopez"
 subtile: "Presidente Municipal"
 permalink: /blog/:title.html

@@ -8,7 +8,7 @@ baseurl: ""
 url: "https://denicolasromero.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: denicolasromero
 google_analytics: UA-130293099-3
-
+lang: es_mx
 
 minima:
   date_format: "%-d de %B del %Y"

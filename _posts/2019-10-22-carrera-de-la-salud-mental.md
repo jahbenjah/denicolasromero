@@ -10,7 +10,7 @@ El pasado 20 de octubre del 2019 tuvo lugar la primera carrera de la Salud Menta
 
 Consistio en correr o caminar 5 km por la llamada via Corta
 
-Asistieron jóvenes, adultos, adultos mayores y niño.
+Asistieron jóvenes, adultos, adultos mayores y niños.
 
 El punto de salida estuvo ubicado en la Escuela Yolanda Cuervo Toledano en la colonia cantaros 3 del municipio. La linea de meta estuvo el la colonia Santa Anita la Bolsa en las oficinas del Centro de Control y Mando mejor conocido como C4.
 

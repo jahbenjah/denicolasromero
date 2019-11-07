@@ -6,7 +6,7 @@ permalink: /blog/:title.html
 image: /img/blog/1.webp
 ---
 
-De acuerdo con el Servicio Postal Mexicano y su [servicio de consulta de códigos postales](https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/Descarga.aspx) Nicolás Romero esta compuesto por 64 colonias, 20 fraccionamientos, 11 pueblos, 7 barrios 3 unidades habitaciones, 1 conjunto habitacional y 1 una rancheria. Estos esta agrupados en 38 códigos postales. A continuación mostramos la tabla de códigos postales de Nicolás Romero con información actualizad hasta el 30 de octubre del 2019.
+De acuerdo con el Servicio Postal Mexicano y su [servicio de consulta de códigos postales](https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/Descarga.aspx) Nicolás Romero esta compuesto por 64 colonias, 20 fraccionamientos, 11 pueblos, 7 barrios 3 unidades habitacionales, 1 conjunto habitacional y 1 una rancheria. Estos estan agrupados en 38 códigos postales. A continuación mostramos la tabla de códigos postales de Nicolás Romero con información actualizad hasta el 30 de octubre del 2019.
 
 Pronto estaremos agregando una mapa de las colonias e información especifica de las mismas. Si tienes algo que compartirnos de tú colonia dejanos un comentario.
 

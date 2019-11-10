@@ -3,7 +3,7 @@ layout: post2
 title:  "Carrera de la Salud Mental"
 subtitle:  "5Km"
 permalink: /blog/:title.html
-image: /img/blog/1.webp
+image: /img/blog/carrera.webp
 ---
 
 El pasado 20 de octubre del 2019 tuvo lugar la primera carrera de la Salud Mental en Nicolas Romero. Una carrera de 5Km por la segunda via principal del municipio.

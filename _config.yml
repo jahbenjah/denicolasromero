@@ -41,5 +41,6 @@ exclude:
   - package-lock.json
   - package.json
   - gulpfile.js
+  - img-temp/
   
   

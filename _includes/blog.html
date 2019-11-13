@@ -9,7 +9,7 @@
             {%- for post in site.posts -%}
             <div class="col-lg-4 col-md-6">
                 <div class="speaker">
-                    <img src="{{ post.image }}" alt="Speaker 1" class="img-fluid">
+                    <img data-src="{{ post.image }}" alt="{{ post.title }}" class="lazyload img-fluid">
                     <div class="details">
                         <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
                         <p>{{ post.date | date: date_format }}</p>

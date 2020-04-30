@@ -28,7 +28,7 @@
         "@fortawesome/fontawesome-free": "5.9.0",
         "animate.css": "^3.7.2",
         "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "jquery-migrate": "^3.1.0",
         "jquery.easing": "^1.4.1",
         "lodash.template": "^4.5.0",
